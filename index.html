@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>On Stage</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main-page">
+                <h1>On/Stage</h1>
+                <p>Search to find upcoming events for your favorite artist or band.</p>
+            </div>
+
+            <form id="js-form">
+                <input type="text" name="search-term" id="js-search-term" placeholder="Artist/Band" required>
+                <input type="submit" class="submit-button" value="Search">
+            </form>
+
+            <p id="js-error-msg" class="error-msg"></p>
+
+            <section id="results" class="hidden">
+                <h1>Upcoming Events</h1>
+                <ul id="results-list">
+                </ul>
+            </section>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+    <footer class="logo">
+        <p>ON/STAGE</p>
+    </footer>
+</html>
