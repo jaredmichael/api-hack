@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
 }
 
 .hidden {
@@ -9,3 +10,127 @@
 .error-msg {
     color: red;
 }
+
+html { 
+    background: url(images/onStage-background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    text-align: center;
+}
+hr { 
+    width:85%; 
+    height:4px; 
+}
+
+h1.logo {
+    margin-bottom: 0px;
+}
+.main-page {
+    margin-top: 80px;
+}
+
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    color: magenta;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    font-variant-caps: all-petite-caps;
+    font-size:34px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.events {
+    color: magenta;
+    font-family: 'Roboto', sans-serif;  
+    font-variant-caps: all-petite-caps; 
+    text-shadow: 2px 2px 8px black;
+}
+
+input {
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+button {
+    border-radius: 5px;
+    color: magenta;
+    font-size: 22px;
+    padding: 8px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, .8);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+}
+
+a {
+    color: magenta;
+    font-variant-caps: all-petite-caps;
+}
+
+.venue, .date {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer {
+    position: fixed;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    left: 0px;
+    bottom: 0px;
+    background-color: black;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .events {
+        font-size: 48px;
+    }
+
+    input {
+        width: 200px;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    button {
+        font-size: 20px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+}
+ 

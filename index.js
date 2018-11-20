@@ -10,43 +10,49 @@ function formatQueryParams(params) {
 
 function displayResults(responseJson) {
     // if any remove previous results
-    console.log(responseJson);
     $('#results-list').empty();
-     //display results section
-     $('#results').removeClass('hidden');
-     $('.main-page').addClass('hidden');
+    //display results section
+    $('.events').removeClass('hidden');
+    $('footer').removeClass('hidden');
+    $('.main-page').addClass('hidden');
     //interate through items array
-    
+
+    if (responseJson.length == 0) {
+        $('#results-list').append(
+            `<p>SORRY THERE ARE NO UPCOMING EVENTS AT THIS TIME</br></br>
+            PLEASE CHECK BACK LATER OR SEARCH OTHER ARTIST EVENTS</p>`)
+    }
+
     for (let i = 0; i < responseJson.length; i++) {
         //for each object in items array, add list item to results
         $('#results-list').append(
             `<li>
+                <hr/>
                 <h2>${responseJson[i].lineup}</h2>
-                <h3>${responseJson[i].datetime}</h3>
-                <h3>${responseJson[i].venue.name}</h3>
-                <p>${responseJson[i].venue.city}, ${responseJson[i].venue.region} ${responseJson[i].venue.country}</p>
-                <h3><a href="${responseJson[i].offers.url}">Purchase Tickets</a></h3>
+                <p class="date">Date: ${new Date(responseJson[i].datetime).toLocaleDateString()}</p></br>
+                <h3 class="venue">${responseJson[i].venue.name}</h3>
+                <p class="venue">${responseJson[i].venue.city}, ${responseJson[i].venue.region} ${responseJson[i].venue.country}</p>
+                <h2><a href="${responseJson[i].offers[0].url}" target="_new">Purchase Tickets</a></h2>
             </li></br>`
-        )};       
+        )
+    }
 }
 
 function whosOnStage(query) {
     const params = {
         app_id: appkey,
-        date: 'upcoming',    
+        date: 'upcoming',
     };
 
     const queryString = formatQueryParams(params)
     const url = searchUrl + encodeURIComponent(query) + '/events?' + queryString;
-
-    console.log(url);
 
     fetch(url)
         .then(response => {
             return response.json();
         })
         .then(responseJson => displayResults(responseJson))
-        .catch( err => {
+        .catch(err => {
             $('#js-error-msg').text(`Oops! Something went wrong: ${err.message}`);
         });
 }
