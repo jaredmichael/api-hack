@@ -1,8 +1,8 @@
-ON/STAGE
-Search for upcoming events by artist or band.
+<h1>ON/STAGE</h1>
+<h3>Search for upcoming events by artist or band</h3>
 
-Live demo
-
+<h2>Live demo</h2>
+<a href="https://jaredmichael.github.io/on-stage/">ON/STAGE</a>
 
 Screenshots
 Landing Page
