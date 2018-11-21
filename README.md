@@ -8,12 +8,15 @@
 
 <h2>Screenshots</h2>
 <h3>Landing Page</h3>
+
 ![alt text](https://github.com/jaredmichael/on-stage/blob/master/images/landing-page.png)
 
 <h3>Results</h3>
+
 ![alt text](https://github.com/jaredmichael/on-stage/blob/master/images/results-page.png)
 
 <h3>No Results</h3>
+
 ![alt text](https://github.com/jaredmichael/on-stage/blob/master/images/no-results-page.png)
 </br></br>
 
