@@ -4,19 +4,19 @@
 <h2>Live demo</h2>
 <a href="https://jaredmichael.github.io/on-stage/">ON/STAGE</a>
 
-Screenshots
-Landing Page
+<h2>Screenshots</h2>
+<h3>Landing Page</h3>
 ![alt text](https://github.com/jaredmichael/api-hack/blob/master/images/landing-page.png)
 
-Results
+<h3>Results</h3>
 ![alt text](https://github.com/jaredmichael/api-hack/blob/master/images/results-page.png)
 
-No Results
+<h3>No Results</h3>
 ![alt text](https://github.com/jaredmichael/api-hack/blob/master/images/no-results-page.png)
 
-Built with
-HTML / CSS / JavaScript / jQuery
+<h2>Built with</h2>
+<h3>HTML / CSS / JavaScript / jQuery</h3>
 
-Author
-Jared Juan
+<h2>Author</h2>
+<h3>Jared Juan</h3>
 
