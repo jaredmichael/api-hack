@@ -6,31 +6,37 @@
         <title>On Stage</title>
         <link href="index.css" rel="stylesheet" type="text/css">
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="container">
             <div class="main-page">
-                <h1>On/Stage</h1>
-                <p>Search to find upcoming events for your favorite artist or band.</p>
+                <h1>ON/STAGE</h1><hr/>
+                <p>FIND UPCOMING EVENTS FOR YOUR FAVORITE ARTIST OR BAND</p>
             </div>
 
-            <form id="js-form">
-                <input type="text" name="search-term" id="js-search-term" placeholder="Artist/Band" required>
-                <input type="submit" class="submit-button" value="Search">
-            </form>
+            <section id="results" >
+                <h1 class="events hidden">Upcoming Events</h1>
 
-            <p id="js-error-msg" class="error-msg"></p>
+                <form id="js-form">
+                    <input type="text" name="search-term" id="js-search-term" placeholder="Artist/Band" required>
+                    <button type="submit" class="submit-button">
+                        <span><i class="fa fa-search"></i></span>
+                      </button>
+                </form>
 
-            <section id="results" class="hidden">
-                <h1>Upcoming Events</h1>
                 <ul id="results-list">
                 </ul>
             </section>
+
+            <p id="js-error-msg" class="error-msg"></p>
+                   
         </div>
 
         <script src="index.js"></script>
     </body>
-    <footer class="logo">
-        <p>ON/STAGE</p>
+    <footer class="hidden">
+        <h1>ON/STAGE</h1>
     </footer>
 </html>
